@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.hydro"
+       name="[B][COLOR purple]HydroGEN[/COLOR][/B]"
+       version="1.1.8"
+       provider-name="[B][COLOR purple]EOS[/COLOR][/B]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">HydroGEN</summary>
+    <language>en</language>
+    <description lang="en">Get all your Official Live TV HERE</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.hydr0gen" name="Hydr0GEN Repo" version="1.0.1" provider-name="Hydra">
+    <extension point="xbmc.addon.repository" name="Hydr0GEN Repo">
+        <info compressed="false">https://github.com/Hydrateammaster/repo.hydr0GEN/addons.xml</info>
+        <checksum>https://github.com/Hydrateammaster/repo.hydr0GEN/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/Hydrateammaster/repo.hydr0GEN</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Hydr0GEN</summary>
+        <description>Get all your Official Live TV HERE!</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+    <addon id="repository.name" name="Your Repository Name" version="1.0.0" provider-name="Your Name">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Your Repository Name">
+            <info compressed="false">https://raw.githubusercontent.com/Your-Github-Username/repository-link/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Your-Github-Username/repository-link/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Your-Github-Username/repository-link/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>A short summary of this repository</summary>
+            <description>The description can be longer. Using [CR] you can create a newline. The use of other markup is not advised.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+</addons>
